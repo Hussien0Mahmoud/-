@@ -1,0 +1,761 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* Start Of NavBar */
+.nav {
+    width: 100%;
+    padding: 20px 120px;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    z-index: 8000;
+    box-shadow: 5px 10px 8px #8888;
+    background-color: white;
+}
+
+.nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+
+}
+
+.nav img {
+    width: 60px;
+    height: 50px;
+}
+
+.nav ul li a {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    text-decoration: none;
+    display: block;
+    padding: 16px 10px;
+}
+
+.nav ul li a:hover {
+    color: #F3A202;
+}
+
+.nav ul li .active {
+    color: #F3A202;
+}
+
+.nav ul li .App-icon {
+    border-radius: 100px;
+    border: 2px #F3A202 solid;
+    padding: 11px 25px;
+    color: black;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.nav ul li .App-icon i {
+    padding-left: 10px;
+    color: #F3A202;
+}
+
+.nav ul li .App-icon:hover {
+    color: white;
+    background-color: #F3A202;
+}
+
+.nav ul li .App-icon:hover i {
+    color: white;
+}
+
+
+
+/* End Of NavBar */
+
+/* Strat Of Header*/
+
+.header {
+    width: 100%;
+    /* height: 80vh; */
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 100px;
+}
+
+.header .content {
+    padding-top: 200px;
+    /* padding-left: 110px; */
+    width: 40%;
+    /* height: 600px; */
+}
+
+.header .content h1 {
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header .content p {
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(0, 0, 0, .5);
+    font-weight: 500;
+    margin: 30px 0px 50px;
+}
+
+.header .content button {
+    /* margin-top: 50px; */
+    border-radius: 15px;
+    background-color: #F3A202;
+    border: 1px solid #F3A202;
+    padding: 17px 38px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header .content button a {
+    color: white;
+}
+
+.header .content button:hover {
+    background-color: #73c5eb;
+    border: 1px solid #73c5eb;
+}
+
+.header .banner {
+    width: 40%;
+}
+
+.header .banner img {
+    margin-top: 70px;
+    margin-left: 20px;
+    width: 35%;
+    height: 65%;
+    animation-name: animate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    position: absolute;
+}
+
+@keyframes animate {
+    0% {
+        top: 60px;
+    }
+
+    50% {
+        top: 100px;
+    }
+
+    100% {
+        top: 60px;
+    }
+}
+/* Responsive Header */
+/* @media (max-width:575px){
+    .header {
+        display: block;
+        width: 95%;
+    }
+    .header .content {}
+    .header .banner {
+        display: block;
+        position: static;
+    }
+} */
+/* End Of Header*/
+
+/* Start Of Clients Section*/
+.clients-section {
+    background: rgb(240, 240, 240);
+    padding-top: 30px;
+}
+
+.clients-section .clients {
+    width: 85%;
+    height: 150px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.clients-section .clients img {
+    width: 100px;
+    height: 100px;
+    filter: grayscale();
+}
+
+.clients-section .clients img:hover {
+    filter: none;
+    transition: all 1.5s;
+    transform: scale(1.2);
+}
+
+.clients-section .clients .client .special {
+    padding-top: 35px;
+    height: 80px;
+}
+
+/* End Of Clients Section*/
+
+/* Start Of About-Us Section Part-1*/
+
+.aboutUs1 {
+    margin-top: 80px;
+}
+
+.heading {
+    margin-bottom: 50px;
+    position: relative;
+    text-align: center;
+}
+
+.heading h2 {
+    padding-bottom: 15px;
+    padding-top: 15px;
+    text-align: center;
+    font-family: 'Jost', sans-serif;
+    font-size: 35px;
+    color: rgba(38, 60, 97, 0.9);
+}
+
+.heading h2::before {
+    content: "";
+    width: 10%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, .1);
+    position: absolute;
+    top: 100%;
+    left: 58%;
+}
+
+.heading h2::after {
+    content: "";
+    width: 4%;
+    height: 2px;
+    background-color: #F3A202;
+    position: absolute;
+    top: 100%;
+    left: 61%;
+}
+
+.aboutUs1 .body {
+    display: flex;
+    justify-content: space-around;
+}
+
+.aboutUs1 .body .right {
+    width: 50%;
+}
+
+.aboutUs1 .body .right p {
+    font-size: 26px;
+    line-height: 32px;
+    font-family: 'Jost', sans-serif;
+    padding: 0px 80px 60px 35px;
+    color: rgba(0, 0, 0, .5);
+}
+
+.aboutUs1 .body .right a {
+    margin: 35px;
+    border-radius: 5px;
+    border: 2px solid #F3A202;
+    background-color: white;
+    padding: 16px 45px;
+    color: #F3A202;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.aboutUs1 .body .right a:hover {
+    background-color: #F3A202;
+    color: white;
+}
+
+.aboutUs1 .body .left {
+    width: 40%;
+    height: 60vh;
+    margin-left: 100px;
+}
+
+.aboutUs1 .body .left img {
+    width: 97%;
+    height: 88%;
+}
+
+/* End Of About-Us Section Part-1*/
+
+/* Start Of About-Us Section Part-2*/
+
+.aboutUs2{
+    width: 100%;
+    /* height: 50vh; */
+}
+.aboutUs2 .body{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.aboutUs2 .body .left{
+    width: 40%;
+    padding-left: 120px;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.aboutUs2 .body .left p{
+    width: 100%;
+    font-size: 19px;
+    color: rgba(0, 0, 0, .6);
+    line-height: 1.2;
+}
+.aboutUs2 .body ul{
+    width: 100%;
+    list-style-type: none;
+}
+.aboutUs2 .body ul li{
+    color: rgba(0, 0, 0, .6);
+    padding-bottom: 20px;
+    font-size: 18px;
+}
+.aboutUs2 .body ul li i{
+padding-right: 10px;
+color: #F3A202;
+}
+.aboutUs2 .body .right{
+    width: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.aboutUs2 .body .right p{
+width: 85%;
+padding-left:30px;
+font-size: 19px;
+color: rgba(0, 0, 0, .6);
+line-height: 1.2;
+padding-bottom:50px ;
+}
+.aboutUs2 .body .right a{
+    text-align: center;
+    border-radius: 6px;
+    border:2px solid #F3A202;
+    background-color: white;
+    padding: 12px 43px;
+    color: #F3A202;
+    font-size: 17px;
+    font-weight:bold;
+    margin-left: 30px;
+}
+.aboutUs2 .body .right a:hover{
+background-color: #F3A202;
+color: white;
+}
+
+/* End Of About-Us Section Part-2*/
+
+/* Start Of Categories Section */
+
+.categories{
+    width: 100%;
+    height:1200px;
+    background:rgb(240, 240, 240);
+    margin-top: 40px;
+    padding-top: 20px;
+    
+}
+.categories .body {
+    width: 93%;
+    position: relative;
+}
+.categories .body div{
+    width:29%;
+    float: right;
+    height: 300px;
+    position: relative;
+    padding: 10px;
+    margin-top: 15px;
+}
+
+.categories .body div h2{
+position: absolute;
+top:20%;
+background-color: #F3A202;
+width: 95.7%;
+text-align: center;
+height: 50px;
+padding: 10px 0px;
+color: white;
+font-size: 35px;
+}
+.categories .body div img{
+width: 100%;
+height: 300px;
+margin-top: 30px;
+border-radius: 20px;
+transition: all .5s;
+}
+.categories .body div img:hover{
+    margin-top: 10px;
+    /* scale: 1.1; */
+}
+/* End Of Categories Section */
+
+/* Start Of Brands Section */
+.brands{
+    /* height: 70vh; */
+    margin-top: 50px;
+    width: 100%;
+}
+.brands .description-brands p {
+    /* margin: 50px 180px; */
+    width: 80%;
+    text-align: center;
+    margin: 50px auto;
+    font-size: 24px;
+    line-height: 28px;
+    color: rgba(0, 0, 0, .6);
+}
+.brands .body{
+    margin: 5px auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+}
+.brands .body div {
+    /* margin: 5px; */
+    width: 32%;
+}
+.brands .body div img {
+    width: 100%;
+}
+/* End Of Brands Section */
+
+/* Start Of Contact Section */
+
+.contact{
+    margin-top:100px;
+    /* height: 1000px; */
+}
+.contact .description-contact p {
+    /* margin: 50px 180px; */
+    width: 85%;
+    text-align: center;
+    margin: 50px auto;
+    font-size: 20px;
+    line-height: 28px;
+    color: rgba(0, 0, 0, .6);
+}
+.contact .body{
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-around;
+}
+.contact .body .left{
+    width: 50%;
+    height: 600px;
+}
+.contact .body .left img{
+    width: 100%;
+    height: 100%;
+    }
+.contact .body .right{
+    width: 50%;
+    box-shadow: 12px 0 15px -4px rgba(0, 0, 0, .2), -12px 0 8px -4px rgba(0, 0, 0, .2);
+    margin-left: 30px;
+    padding: 30px 0px 0px 30px;
+    border-top: 3px solid #F3A202;
+    border-bottom: 3px solid #F3A202;
+}
+.contact .body .right div{
+    width:95%;
+    /* display: block; */
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(0, 0, 0, .6);
+    margin-bottom: 20px;
+    padding-right: 20px;
+    font-size: 18px;
+}
+.contact .body .right  input{
+height: 40px;
+width: 95%;
+border-radius:5px ;
+border-color: rgba(0, 0, 0, .1); 
+margin-top: 10px;
+/* margin-bottom: 20px; */
+}
+.contact .body .right .message{
+    width: 95%; 
+}
+textarea{
+    width: 95%;
+    height: 150px;
+    border-radius:5px ;
+    border-color: rgba(0, 0, 0, .1); 
+    margin-top: 10px;
+}
+
+.contact .body .right button{
+    border-radius: 25px;
+    border:1px solid #F3A202;
+    background-color: #F3A202;
+    padding: 15px 43px;
+    color: white;
+    font-size: 17px;
+    font-weight:bold;
+    transition: all .4s;
+    display: block;
+    margin: 40px auto;
+}
+.contact .body .right button:hover{
+    background-color: #73c5eb;
+    border:1px solid #73c5eb;
+}
+/* End Of Contact Section */
+
+/* Start Of Social Section */
+
+.social{
+    width:80%;
+    /* height: 200px; */
+    text-align: center;
+    align-items: center;
+    margin: 100px auto;
+    /* padding: 10px auto; */
+}
+.social h2{
+    font-family: 'Jost', sans-serif; 
+    font-size: 25px;
+    color: #37517e;
+    margin-bottom: 20px;
+}
+.social p{
+font-family: Arial, Helvetica, sans-serif;
+color: rgba(0, 0, 0, .8);
+line-height: 22px;
+font-size: 20px;
+margin-top: 20px;
+}
+.social .links {
+    width: 50%;
+    margin: 40px auto;
+    padding-left: 100px;
+}
+.social .links ul{
+display: flex;
+list-style-type: none;
+/* margin: 20px auto; */
+}
+.social .links ul li a  {
+padding: 18px;
+border-radius: 100%;
+background-color: #F3A202;
+margin: 5px;
+transition: all .4s;
+color: white;
+font-size: 25px;
+}
+
+.social .links ul  li a:hover{
+    background-color: #73c5eb;
+}
+/* End Of Social Section */
+
+/* Start Of Footer Section */
+
+footer{
+    /* width:96.4%; */
+    /* height: 100px; */
+    text-align: left;
+    /* padding-left: 60px;
+    padding-top: 30px; */
+    padding: 20px 15px 30px 60px;
+    background-color: #37517e;
+    display: flex;
+    justify-content: space-around;
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-size: 16px; */
+    color: white;
+}
+footer .left{
+    width:30%;
+}
+footer .left p{
+    padding-top: 13px;
+    font-size: 18px; 
+}
+footer .right{
+    margin-left: 150px;
+}
+footer .right p{
+    padding-top: 13px;
+    font-size: 18px; 
+    /* font-weight: lighter; */
+}
+footer .right p a{
+color: #F3A202;
+transition: all .4s;
+}
+footer .right p a:hover{
+color:  #73c5eb;
+    /* transform: scale(1.2) */
+}
+/* End Of Footer Section */
+
+/*/////////////////////////////////////////*/
+
+/*--------------Responsive-----------*/
+
+/* Medium Screen + Tabletes*/
+@media (max-width: 1000px){
+    .nav {
+        padding: 20px 30px;
+    }
+    .nav ul li a {
+        padding: 16px 7px;
+    }
+    .header {
+        padding-bottom: 50px;
+    }
+    .header .content {
+        padding-top: 150px;
+    }
+    .header .content h1 {
+        font-size: 43px;
+    }
+    .clients-section .clients {
+        width: 100%;
+        height: auto;
+        padding-bottom: 30px    ;
+    }
+    .aboutUs1 .body .right p {
+        padding: 0px 40px 45px 25px;
+    }
+    .aboutUs2 .body {
+        flex-direction: column;
+    }
+    .aboutUs2 .body .left{
+        width: 90%;
+    }
+    .aboutUs2 .body .right{
+        width: 90%;
+        padding-left: 100px;
+    }
+    .contact .body .left {
+        width: 0;
+    }
+    .contact .body .left img {
+        display: none;
+    }
+    .contact .body .right{
+        margin: 3px auto;
+        width: 80%;
+    }
+    .social .links  {
+        width: 50%;
+        margin: 40px auto;
+        padding-left: 10px;
+    }
+
+}
+
+/* Phone Devices*/
+
+@media (max-width: 767px){
+    .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav ul li .App-icon {
+        display: none;
+    }
+    .nav img {
+        width: 80px;
+        height: 60px;
+    }
+    .nav ul li a {
+        padding: 16px 5px;
+        font-size: 14px;
+    }
+
+    .header {
+        flex-direction: column;
+        padding-bottom: 40px;
+    }   
+    .header .content {
+        padding-top: 170px;
+        padding-left: 20px;
+        width: 90%;
+    } 
+    .header .content h1 {
+        font-size: 35px;
+    }
+    .header .content p {
+        margin: 15px 0px 20px;
+    }
+    .header .banner {
+        display: none;
+    }
+    .header .banner img {
+        /* margin-top: auto;
+        margin-left: auto;
+        animation-name: none; */
+    }
+    .clients-section .clients {
+        flex-wrap: wrap;
+    }
+    .clients-section .clients .client {
+        width: 30%;
+        margin-top: 15px;
+    }
+    .aboutUs1 .body {
+        flex-direction: column-reverse;
+    }
+    .aboutUs1 .body .right {
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .aboutUs1 .body .left {
+        height: auto;
+        width: 80%;
+        margin: 40px auto ;
+    }
+    .aboutUs1 .body .left img {
+        border-radius: 8px;
+    }
+    .categories {
+        width: 100%;
+        height: auto;
+        margin-bottom: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding-bottom: 60px;
+    }
+    .categories .body div {
+        width:50%
+    }
+
+    .social .links {
+        padding-left: 0px;
+        width: 100%;
+    }   
+    
+    footer {
+        width: 100%;
+    }
+    footer .left{
+        width:50%;
+    }
+    footer .right{
+        width:50%;
+        margin-left: 50px;
+    }
+    
+
+
+
+}
+
